@@ -33,25 +33,25 @@
 
 <table clas="data-kas">
   <thead>
-      <tr class="bg-gray-200  uppercase text-sm leading-normal">
+      <tr class="bg-gray-200   text-sm leading-normal">
           <th
-              class="tanggal px-5  border-b-2 border-gray-200 bg-gray-100 text-xs font-semibold  uppercase tracking-wider">
+              class="tanggal border-b-2 border-gray-200 bg-gray-100 text-xs font-semibold   tracking-wider">
               Tanggal
           </th>
           <th
-              class="keterangan px-5  border-b-2 border-gray-200 bg-gray-100 text-xs font-semibold  uppercase tracking-wider">
+              class="keterangan border-b-2 border-gray-200 bg-gray-100 text-xs font-semibold   tracking-wider">
               Keterangan
           </th>
           <th
-              class="pemasukan px-5  border-b-2 border-gray-200 bg-gray-100 text-xs font-semibold  uppercase tracking-wider">
+              class="pemasukan border-b-2 border-gray-200 bg-gray-100 text-xs font-semibold   tracking-wider">
               Pemasukan
           </th>
           <th
-              class="pengeluaran px-5  border-b-2 border-gray-200 bg-gray-100 text-xs font-semibold  uppercase tracking-wider">
+              class="pengeluaran border-b-2 border-gray-200 bg-gray-100 text-xs font-semibold   tracking-wider">
               Pengeluaran
           </th>
           <th
-              class="saldo px-5  border-b-2 border-gray-200 bg-gray-100 text-xs font-semibold  uppercase tracking-wider">
+              class="saldo border-b-2 border-gray-200 bg-gray-100 text-xs font-semibold   tracking-wider">
               Saldo
           </th>
       </tr>

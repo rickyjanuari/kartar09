@@ -1,5 +1,5 @@
 <script>
-  import Image from '../../static/fotoku.jpg';
+  import Image from '../../static/logo.png';
 </script>
 
 <section class="applause-gradient">
