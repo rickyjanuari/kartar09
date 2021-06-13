@@ -1,0 +1,726 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* fira-sans-300 - latin */
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: url('./fonts/fira-sans-v11-latin-300.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('./fonts/fira-sans-v11-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./fonts/fira-sans-v11-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./fonts/fira-sans-v11-latin-300.woff') format('woff'), /* Modern Browsers */
+       url('./fonts/fira-sans-v11-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('./fonts/fira-sans-v11-latin-300.svg#FiraSans') format('svg'); /* Legacy iOS */
+}
+/* fira-sans-regular - latin */
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/fira-sans-v11-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('./fonts/fira-sans-v11-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./fonts/fira-sans-v11-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./fonts/fira-sans-v11-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('./fonts/fira-sans-v11-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('./fonts/fira-sans-v11-latin-regular.svg#FiraSans') format('svg'); /* Legacy iOS */
+}
+/* fira-sans-800 - latin */
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: url('./fonts/fira-sans-v11-latin-800.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('./fonts/fira-sans-v11-latin-800.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./fonts/fira-sans-v11-latin-800.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./fonts/fira-sans-v11-latin-800.woff') format('woff'), /* Modern Browsers */
+       url('./fonts/fira-sans-v11-latin-800.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('./fonts/fira-sans-v11-latin-800.svg#FiraSans') format('svg'); /* Legacy iOS */
+}
+
+
+
+body {
+  font-family: 'Fira Sans', sans-serif;
+  
+  @apply relative leading-relaxed text-lg;
+}
+
+.mh a {
+  @apply text-red-700;
+}
+
+.mh a:hover {
+  @apply underline text-red-800;
+}
+
+.mh h1 {
+  @apply text-3xl mb-3 mt-6 font-bold;
+}
+
+.mh h2 {
+  @apply text-2xl mb-3 mt-6 font-bold;
+}
+
+.mh h3,
+.mh h4,
+.mh h5,
+.mh h6 {
+  @apply text-xl mb-3 mt-6 font-semibold;
+}
+
+.mh p {
+  @apply mb-4 text-gray-800;
+}
+
+.mh .blog code p {
+  @apply mb-0;
+  color: inherit;
+}
+
+.mh pre > p {
+  @apply m-0;
+}
+
+.mh ol {
+  @apply list-decimal text-gray-800 mb-4 ml-8;
+}
+
+.mh ul {
+  @apply list-disc text-gray-800 mb-4 ml-8;
+}
+
+.mh ul ul {
+  @apply mb-4 ml-8 text-gray-800 list-circle;
+}
+
+.mh blockquote {
+  @apply p-2 bg-gray-100 mb-4 border-l-4 border-gray-400 italic;
+}
+
+.mh blockquote > p {
+  @apply mb-0;
+}
+
+.mh pre[class*='language-'] {
+  margin: 16px 0 32px 0 !important;
+}
+
+.mh td,
+.mh th {
+  
+}
+
+.mh tr:nth-child(odd) {
+  @apply bg-gray-100;
+}
+
+.mh table {
+  @apply mb-6;
+}
+
+.mh hr {
+  display: block;
+  unicode-bidi: isolate;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  overflow: hidden;
+  border-style: inset;
+  border-width: 1px;
+}
+
+.mh figcaption {
+  @apply text-gray-600 text-sm;
+}
+
+.mh p > code:not([class*='language-']),
+.mh h3 > code,
+.mh li > code,
+.mh figcaption > code {
+  word-break: break-word;
+  background-color: rgba(240, 240, 240, 0.5);
+  padding: 0.1em 0.2em;
+  border-radius: 2px;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.mh .anchor-link {
+  @apply no-underline text-opacity-25;
+}
+
+.mh .anchor-link:hover {
+  @apply no-underline;
+}
+
+.nav-link {
+  @apply block text-red-700 mt-4 mr-4;
+}
+
+.nav-link:hover {
+  @apply text-teal-800;
+}
+
+.footer-link {
+  @apply block text-teal-200 mt-4 mr-4;
+}
+
+.footer-link:hover {
+  @apply text-white;
+}
+
+.mh .link-inherit,
+.mh .link-inherit:hover {
+  color: inherit !important;
+}
+
+.mh .mh-container {
+  @apply px-4 py-14 mx-auto;
+}
+
+.mh .btn-primary {
+  @apply inline-block px-5 py-3 text-sm font-semibold text-white bg-red-700 ;
+}
+
+.mh .btn-primary:hover {
+  @apply bg-teal-800 text-white no-underline;
+}
+
+.mh .card {
+  @apply relative bg-white border rounded shadow-xl w-full;
+}
+
+.mh .topic-box {
+  @apply text-center border-b-4 border-red-700;
+}
+
+.mh .info-tag {
+  @apply inline-flex items-center bg-gray-200 rounded py-1 my-1 text-sm font-semibold mr-2 px-3;
+}
+
+.mh .alert-gray {
+  @apply p-4 text-gray-700 bg-gray-300 border-l-4 border-gray-500;
+}
+
+.mh .alert-success {
+  @apply p-4 text-green-800 bg-green-100 border-l-4 border-green-500;
+}
+
+.applause-gradient {
+  background-image: linear-gradient(
+      306deg,
+      rgba(54, 54, 54, 0.05) 0%,
+      rgba(54, 54, 54, 0.05) 33.333%,
+      rgba(85, 85, 85, 0.05) 33.333%,
+      rgba(85, 85, 85, 0.05) 66.666%,
+      rgba(255, 255, 255, 0.05) 66.666%,
+      rgba(255, 255, 255, 0.05) 99.999%
+    ),
+    linear-gradient(
+      353deg,
+      rgba(81, 81, 81, 0.05) 0%,
+      rgba(81, 81, 81, 0.05) 33.333%,
+      rgba(238, 238, 238, 0.05) 33.333%,
+      rgba(238, 238, 238, 0.05) 66.666%,
+      rgba(32, 32, 32, 0.05) 66.666%,
+      rgba(32, 32, 32, 0.05) 99.999%
+    ),
+    linear-gradient(
+      140deg,
+      rgba(192, 192, 192, 0.05) 0%,
+      rgba(192, 192, 192, 0.05) 33.333%,
+      rgba(109, 109, 109, 0.05) 33.333%,
+      rgba(109, 109, 109, 0.05) 66.666%,
+      rgba(30, 30, 30, 0.05) 66.666%,
+      rgba(30, 30, 30, 0.05) 99.999%
+    ),
+    linear-gradient(
+      189deg,
+      rgba(77, 77, 77, 0.05) 0%,
+      rgba(77, 77, 77, 0.05) 33.333%,
+      rgba(55, 55, 55, 0.05) 33.333%,
+      rgba(55, 55, 55, 0.05) 66.666%,
+      rgba(145, 145, 145, 0.05) 66.666%,
+      rgba(145, 145, 145, 0.05) 99.999%
+    ),
+    linear-gradient(
+90deg
+, rgb(255 0 0), rgb(217 37 28));
+}
+
+/* @tailwindcss/typography overwrites */
+.prose-lg img,
+.lg\:prose-xl img {
+  margin: 0 !important;
+}
+
+.prose-lg ul > li,
+.lg\:prose-xl ul > li {
+  padding-left: 0 !important;
+}
+
+.title{
+    display: inline-block;
+    position: relative;
+    clear: both;
+    text-align: center;
+    margin-bottom: 10px;
+    border-left: 5px solid #00adad;
+    padding: 5px 10px;
+}
+.title.is-2 {
+    font-size: 2.5rem;
+}
+
+.card {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #fff;
+}
+
+
+table {
+  width: 100% ;
+}
+.tr-bulan td{
+  background-color: #000;
+  color: #fff;
+  font-size: 18px;
+  padding: 5px
+}
+
+
+  /* table thead {
+    display: none;
+  } */
+  table tbody tr{ 
+    width: 100%;
+    font-size: 14px;
+  }
+  /* table tbody tr td{ 
+    float: left;
+  }
+  table tbody tr td.tanggal{ 
+    width: 25%;
+  }
+  table tbody tr td.keterangan{ 
+    width: 75%;
+  }
+  table tbody tr td.pemasukan{ 
+    width: 30%;
+  }
+  table tbody tr td.pengeluaran{ 
+    width: 30%;
+  }
+  table tbody tr td.saldo{ 
+    width: 30%;
+  }
+   */
+
+table tbody tr .keterangan{ 
+  width: 300px  !important;
+}
+
+table tbody tr .tanggal{ 
+  width: 80px  !important;
+}
+table th,
+table td {
+    padding: 5px 5px !important;
+    font-size: 16px !important;
+    text-align: left !important;
+    color: #000;
+    font-weight: bold;
+
+}
+table tbody tr .pengeluaran{ 
+  color: teal !important
+}
+table tbody tr .pemasukan{ 
+  color: green !important
+}
+@media only screen and (max-width: 600px) {
+  table th,
+  table td {
+      padding: 5px 5px !important;
+      font-size: 12px !important;
+      text-align: left !important;
+  }
+  table tbody tr .keterangan{ 
+    width: 250px !important;
+  }
+  
+  table tbody tr .tanggal{ 
+    width: 70px  !important;
+  }
+  table tbody tr td.saldo{ 
+    width: 200px  !important;
+  }
+  
+}
+table {
+  padding-bottom: 300px;
+}
+
+.jumlah-saat-ini {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #000;
+  color: #fff;
+  padding: 15px;
+  left: 0;
+  text-align: center;
+  font-size: 16px !important;
+}
+
+
+table.data-kas tbody tr::last-child {
+  display: none !important;
+}
+
+main{
+    padding-top: 70px !important;
+}
+
+
+/* -----------------------------------------
+  =CSS3 Loading animations
+-------------------------------------------- */
+
+/* =Elements style
+---------------------- */
+.load-wrapp {
+  float: left;
+  width: 100px;
+  height: 100px;
+  margin: 0 10px 10px 0;
+  padding: 20px 20px 20px;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #d8d8d8;
+}
+
+.load-wrapp p {
+  padding: 0 0 20px;
+}
+.load-wrapp:last-child {
+  margin-right: 0;
+}
+
+.line {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  background-color: #4b9cdb;
+}
+
+.ring-1 {
+  width: 10px;
+  height: 10px;
+  margin: 0 auto;
+  padding: 10px;
+  border: 7px dashed #4b9cdb;
+  border-radius: 100%;
+}
+
+.ring-2 {
+  position: relative;
+  width: 45px;
+  height: 45px;
+  margin: 0 auto;
+  border: 4px solid #4b9cdb;
+  border-radius: 100%;
+}
+
+.ball-holder {
+  position: absolute;
+  width: 12px;
+  height: 45px;
+  left: 17px;
+  top: 0px;
+}
+
+.ball {
+  position: absolute;
+  top: -11px;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  background: #4282b3;
+}
+
+.letter-holder {
+  padding: 16px;
+}
+
+.letter {
+  float: left;
+  font-size: 14px;
+  color: #777;
+}
+
+.square {
+  width: 12px;
+  height: 12px;
+  border-radius: 4px;
+  background-color: #4b9cdb;
+}
+
+.spinner {
+  position: relative;
+  width: 45px;
+  height: 45px;
+  margin: 0 auto;
+}
+
+.bubble-1,
+.bubble-2 {
+  position: absolute;
+  top: 0;
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  background-color: #4b9cdb;
+}
+
+.bubble-2 {
+  top: auto;
+  bottom: 0;
+}
+
+.bar {
+  float: left;
+  width: 15px;
+  height: 6px;
+  border-radius: 2px;
+  background-color: #4b9cdb;
+}
+
+/* =Animate the stuff
+------------------------ */
+.load-1 .line:nth-last-child(1) {
+  animation: loadingA 1.5s 1s infinite;
+}
+.load-1 .line:nth-last-child(2) {
+  animation: loadingA 1.5s 0.5s infinite;
+}
+.load-1 .line:nth-last-child(3) {
+  animation: loadingA 1.5s 0s infinite;
+}
+
+.load-2 .line:nth-last-child(1) {
+  animation: loadingB 1.5s 1s infinite;
+}
+.load-2 .line:nth-last-child(2) {
+  animation: loadingB 1.5s 0.5s infinite;
+}
+.load-2 .line:nth-last-child(3) {
+  animation: loadingB 1.5s 0s infinite;
+}
+
+.load-3 .line:nth-last-child(1) {
+  animation: loadingC 0.6s 0.1s linear infinite;
+}
+.load-3 .line:nth-last-child(2) {
+  animation: loadingC 0.6s 0.2s linear infinite;
+}
+.load-3 .line:nth-last-child(3) {
+  animation: loadingC 0.6s 0.3s linear infinite;
+}
+
+.load-4 .ring-1 {
+  animation: loadingD 1.5s 0.3s cubic-bezier(0.17, 0.37, 0.43, 0.67) infinite;
+}
+
+.load-5 .ball-holder {
+  animation: loadingE 1.3s linear infinite;
+}
+
+.load-6 .letter {
+  animation-name: loadingF;
+  animation-duration: 1.6s;
+  animation-iteration-count: infinite;
+  animation-direction: linear;
+}
+
+.l-1 {
+  animation-delay: 0.48s;
+}
+.l-2 {
+  animation-delay: 0.6s;
+}
+.l-3 {
+  animation-delay: 0.72s;
+}
+.l-4 {
+  animation-delay: 0.84s;
+}
+.l-5 {
+  animation-delay: 0.96s;
+}
+.l-6 {
+  animation-delay: 1.08s;
+}
+.l-7 {
+  animation-delay: 1.2s;
+}
+.l-8 {
+  animation-delay: 1.32s;
+}
+.l-9 {
+  animation-delay: 1.44s;
+}
+.l-10 {
+  animation-delay: 1.56s;
+}
+
+.load-7 .square {
+  animation: loadingG 1.5s cubic-bezier(0.17, 0.37, 0.43, 0.67) infinite;
+}
+
+.load-8 .line {
+  animation: loadingH 1.5s cubic-bezier(0.17, 0.37, 0.43, 0.67) infinite;
+}
+
+.load-9 .spinner {
+  animation: loadingI 2s linear infinite;
+}
+.load-9 .bubble-1,
+.load-9 .bubble-2 {
+  animation: bounce 2s ease-in-out infinite;
+}
+.load-9 .bubble-2 {
+  animation-delay: -1s;
+}
+
+.load-10 .bar {
+  animation: loadingJ 2s cubic-bezier(0.17, 0.37, 0.43, 0.67) infinite;
+}
+
+@keyframes loadingA {
+  0 {
+    height: 15px;
+  }
+  50% {
+    height: 35px;
+  }
+  100% {
+    height: 15px;
+  }
+}
+
+@keyframes loadingB {
+  0 {
+    width: 15px;
+  }
+  50% {
+    width: 35px;
+  }
+  100% {
+    width: 15px;
+  }
+}
+
+@keyframes loadingC {
+  0 {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, 15px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes loadingD {
+  0 {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loadingE {
+  0 {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loadingF {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes loadingG {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  50% {
+    transform: translate(70px, 0) rotate(360deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+
+@keyframes loadingH {
+  0% {
+    width: 15px;
+  }
+  50% {
+    width: 35px;
+    padding: 4px;
+  }
+  100% {
+    width: 15px;
+  }
+}
+
+@keyframes loadingI {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+}
+
+@keyframes loadingJ {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(80px, 0);
+    background-color: #f5634a;
+    width: 25px;
+  }
+}

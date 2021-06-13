@@ -1,0 +1,16 @@
+{
+	"background_color": "#ffffff",
+	"theme_color": "#333333",
+	"name": "rickyjanuari.com",
+	"short_name": "rickyjanuari.com",
+	"display": "minimal-ui",
+	"start_url": "/",
+	"icons": [
+		{
+			"src": "mh-favicon.svg",
+			"sizes": "192x192",
+			"type": "image/svg",
+			"purpose": "any maskable"
+		}
+	]
+}
