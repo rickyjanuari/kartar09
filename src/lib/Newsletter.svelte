@@ -13,7 +13,7 @@
 <section class="container mb-16 text-center bg-gray-200 border-t-4 border-red-700 mh-container">
   <div id="mc_embed_signup">
     <form
-      action="https://rickyjanuari.us10.list-manage.com/subscribe/post?u=5cb357866d79280c8f4a5642a&amp;id=498b94dcd1"
+      action="https://karangtaruna09.citapen.com.us10.list-manage.com/subscribe/post?u=5cb357866d79280c8f4a5642a&amp;id=498b94dcd1"
       method="post"
       id="mc-embedded-subscribe-form"
       name="mc-embedded-subscribe-form"

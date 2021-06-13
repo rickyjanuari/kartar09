@@ -11,16 +11,16 @@
     <img
       srcset="{Image}"
       type="image/webp"
-      alt="Ricky Januari"
+      alt="Karang Taruna 09"
       class="rounded-full"
     />
   </div>
-  <h2 class="text-center">Ricky Januari</h2>
+  <h2 class="text-center">Karang Taruna 09</h2>
   <p>
     Freelance Full Stack Web Developer, Calisthenics enthusiast, craft beer
     lover, and biohacker. If you like my content, please consider supporting me
     and
-    <ExternalLink href="https://www.buymeacoffee.com/rickyjanuari">
+    <ExternalLink href="https://www.buymeacoffee.com/karangtaruna09.citapen.com">
       buy me a coffee
     </ExternalLink>!
   </p>

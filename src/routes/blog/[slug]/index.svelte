@@ -25,7 +25,7 @@
   $: postIndex = posts.findIndex((p) => p.slug === $page.params.slug);
   $: previousArticle = posts[postIndex + 1];
   $: nextArticle = posts[postIndex - 1];
-  $: pageTitle = `${post?.title} | Ricky Januari`;
+  $: pageTitle = `${post?.title} | Karang Taruna 09`;
 
   $: blogPostInfo = post
     ? {

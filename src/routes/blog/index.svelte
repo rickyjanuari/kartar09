@@ -22,7 +22,7 @@
 </script>
 
 <svelte:head>
-  <title>Blog | Ricky Januari</title>
+  <title>Blog | Karang Taruna 09</title>
   <meta
     name="description"
     content="Opinions and viewpoints about Programming, Lifestyle and other topics."

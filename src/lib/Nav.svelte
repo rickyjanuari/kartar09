@@ -20,7 +20,7 @@
         href="/"
         class="mt-0 text-xl font-semibold tracking-tight nav-link md:inline-block"
       >
-        <img width="150" src="/logo.png" alt="Ricky Januari" />
+        <img width="150" src="/logo.png" alt="Karang Taruna 09" />
       </a>
     </div>
     <div class="ml-auto md:hidden">

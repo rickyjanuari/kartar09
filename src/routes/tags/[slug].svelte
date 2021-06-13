@@ -23,8 +23,8 @@
 
 <script lang="ts">
   import BlogOverviewHeader from '$lib/BlogOverviewHeader.svelte';
-  import BlogPostSidebar from '$lib/BlogPostSidebar.svelte';
-  import BlogPostFilters from '$lib/BlogPostFilters.svelte';
+  import BlogSidebar from '$lib/BlogSidebar.svelte';
+  import BlogFilters from '$lib/BlogFilters.svelte';
   import SEO from '$lib/SEO.svelte';
   import type { Post } from '../../models/post';
   import type { LoadInput } from '@sveltejs/kit/types/page';
@@ -37,7 +37,7 @@
 </script>
 
 <svelte:head>
-  <title>{readableSlug} | Ricky Januari</title>
+  <title>{readableSlug} | Karang Taruna 09</title>
 
   <meta name="description" content="Posts tagged with {readableSlug}." />
 </svelte:head>
@@ -52,9 +52,9 @@
 </BlogOverviewHeader>
 
 <section class="container flex flex-wrap mh-container">
-  <BlogPostFilters posts="{postsByTag}" filtetealByTag />
+  <BlogFilters posts="{postsByTag}" filtetealByTag />
 
   <aside class="w-full mt-8 lg:mt-0 lg:w-3/12">
-    <BlogPostSidebar posts="{posts}" />
+    <BlogSidebar posts="{posts}" />
   </aside>
 </section>

@@ -11,7 +11,7 @@
 
   export let post: Post;
 
-  const fullURL = `https://rickyjanuari.com${$page.path}`;
+  const fullURL = `https://karangtaruna09.citapen.com${$page.path}`;
   const encodedURL = encodeURIComponent(fullURL);
   const encodedPostTitle = encodeURIComponent(post.title);
   const encodedPostExcerpt = encodeURIComponent(post.excerpt);

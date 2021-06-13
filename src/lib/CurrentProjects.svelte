@@ -5,20 +5,20 @@
 
   const projects = [
     {
-      name: 'rickyjanuari',
+      name: 'karangtaruna09.citapen.com',
       description:
         'Personal website and blog written from scratch with SvelteKit and TailwindCSS.',
       techStack:
         'SvelteKit, Svelte, TailwindCSS, NodeJS, Rollup, Markdown, GitHub, Netlify',
-      websiteLink: 'https://rickyjanuari.com',
-      githubLink: 'https://github.com/rickyjanuari/rickyjanuari.com',
+      websiteLink: 'https://karangtaruna09.citapen.com',
+      githubLink: 'https://github.com/karangtaruna09.citapen.com/karangtaruna09.citapen.com',
     },
     {
       name: 'DAW Comparison',
       description: 'Compare and find the ideal DAW for your needs.',
       techStack: 'Gatsby, React, Ant Design, Markdown, GitHub, Netlify',
       websiteLink: 'https://dawcomparison.com',
-      githubLink: 'https://github.com/rickyjanuari/dawcomparison',
+      githubLink: 'https://github.com/karangtaruna09.citapen.com/dawcomparison',
     },
     {
       name: 'Jooblr',

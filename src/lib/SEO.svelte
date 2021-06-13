@@ -2,7 +2,7 @@
   import { page } from '$app/stores';
   import { onMount } from 'svelte';
 
-  const baseURL = `https://rickyjanuari.com`;
+  const baseURL = `https://karangtaruna09.citapen.com`;
 
   const fullURL = `${baseURL}${$page.path}`;
 
@@ -17,7 +17,7 @@
     cover?: string;
   } = {};
 
-  const fallbackTitle = 'Ricky Januari - On your side for your site';
+  const fallbackTitle = 'Karang Taruna 09 - On your side for your site';
   const fallbackDescription =
     'Personal website and blog written from scratch with SvelteKit and TailwindCSS.';
 
@@ -29,8 +29,8 @@
 
   const authorJSONLD = {
     '@type': 'Person',
-    name: 'Ricky Januari',
-    email: 'contact@rickyjanuari.com',
+    name: 'Karang Taruna 09',
+    email: 'contact@karangtaruna09.citapen.com',
     address: 'Vienna, Austria',
   };
 

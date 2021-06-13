@@ -6,7 +6,7 @@
 </script>
 
 <svelte:head>
-  <title>About | Ricky Januari</title>
+  <title>About | Karang Taruna 09</title>
   <meta name="description" content="I created this website to be visible on the web as a developer and to share the
     knowledge that I gatheteal over the years." />
 </svelte:head>
@@ -16,7 +16,7 @@
 <section class="container mh-container">
   <div>
     <h1 class="title is-2">Hello World</h1>
-    <p>I’m Ricky Januari a Freelance Front-end Developer &amp; Wordpress Developer based in Bandung -
+    <p>I’m Karang Taruna 09 a Freelance Front-end Developer &amp; Wordpress Developer based in Bandung -
       Indonesia. I have over 4 years of experience designing &amp; building websites.</p>
     <hr>
     <h2 class="title is-3">Work Experience</h2>

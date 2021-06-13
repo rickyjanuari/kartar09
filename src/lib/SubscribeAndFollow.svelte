@@ -17,7 +17,7 @@
   </header>
   <div class="flex flex-wrap justify-center mt-5">
     <ExternalLink
-      href="https://github.com/rickyjanuari"
+      href="https://github.com/karangtaruna09.citapen.com"
       ariaLabel="Follow me on GitHub"
       customClass="inline-flex text-teal-900 hover:text-red-700"
     >
@@ -25,7 +25,7 @@
     </ExternalLink>
 
     <ExternalLink
-      href="https://dev.to/rickyjanuari"
+      href="https://dev.to/karangtaruna09.citapen.com"
       ariaLabel="Follow me on dev.to"
       customClass="inline-flex text-teal-900 hover:text-red-700"
     >
@@ -33,7 +33,7 @@
     </ExternalLink>
 
     <ExternalLink
-      href="https://www.linkedin.com/in/rickyjanuari/"
+      href="https://www.linkedin.com/in/karangtaruna09.citapen.com/"
       ariaLabel="Network with me on Linkedin"
       customClass="inline-flex text-teal-900 hover:text-red-700"
     >
@@ -41,7 +41,7 @@
     </ExternalLink>
 
     <ExternalLink
-      href="https://twitter.com/rickyjanuari"
+      href="https://twitter.com/karangtaruna09.citapen.com"
       ariaLabel="Tweet with me on Twitter"
       customClass="inline-flex text-teal-900 hover:text-red-700"
     >
@@ -49,7 +49,7 @@
     </ExternalLink>
 
     <ExternalLink
-      href="https://medium.com/@rickyjanuari"
+      href="https://medium.com/@karangtaruna09.citapen.com"
       ariaLabel="Follow me on Medium"
       customClass="inline-flex text-teal-900 hover:text-red-700"
     >
@@ -59,7 +59,7 @@
     
 
     <ExternalLink
-      href="https://rickyjanuari.com/rss.xml"
+      href="https://karangtaruna09.citapen.com/rss.xml"
       ariaLabel="Read the RSS feed"
       customClass="inline-flex text-teal-900 hover:text-red-700"
     >

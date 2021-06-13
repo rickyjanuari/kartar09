@@ -6,7 +6,7 @@
   <span class="speedlify-score" title="SEO">100</span>
 </div>
 
-<p class="mt-3">https://rickyjanuari.com</p>
+<p class="mt-3">https://karangtaruna09.citapen.com</p>
 
 <style>
   .speedlify-score-wrapper {

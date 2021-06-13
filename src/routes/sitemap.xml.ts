@@ -5,7 +5,7 @@ import { convertToSlug } from '../utils';
 import fs from 'fs';
 import type { Post } from '../models/post';
 
-const BASE_URL = 'https://rickyjanuari.com';
+const BASE_URL = 'https://karangtaruna09.citapen.com';
 const pages = [''];
 
 fs.readdirSync('./src/routes').forEach((file) => {
